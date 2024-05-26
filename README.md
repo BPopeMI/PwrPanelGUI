@@ -42,5 +42,5 @@ nohup python3 PwrPanel.py &
 
 ## Issue Tracking
 * Scroll sending back to top
-* Small UI Box
-* Not viewable in System monitor for applications
+* UI scaling
+
