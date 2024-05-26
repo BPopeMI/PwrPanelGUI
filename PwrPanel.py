@@ -1,9 +1,11 @@
-# 0.2 Ver
+# 0.2a Ver
 # BPopeMI @ Github
 import tkinter as tk
 from tkinter import ttk
 import subprocess
 import setproctitle  # Process title
+import os # Import os module to work with file paths
+from PIL import Image, ImageTk
 
 class PowerPanelGUI:
     def __init__(self, root):
@@ -53,8 +55,23 @@ if __name__ == "__main__":
     # Custom process title
     setproctitle.setproctitle("Power Panel GUI")
 
+    # Get the directory where the script is located
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Path to the icon file
+    icon_path = os.path.join(script_dir, "Pwr.ico")
+
     # Create the main window
     root = tk.Tk()
+
+    # Open the icon file using PIL
+    icon_image = Image.open(icon_path)
+
+    # Convert the image to Tkinter format
+    icon_photo = ImageTk.PhotoImage(icon_image)
+
+    # Set the window icon
+    root.tk.call('wm', 'iconphoto', root._w, icon_photo)
 
     # Create an instance of the PowerPanelGUI class
     app = PowerPanelGUI(root)

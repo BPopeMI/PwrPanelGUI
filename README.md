@@ -1,6 +1,9 @@
 # CyberPower PowerPanel Linux - (Gui)
 This project provides a graphical user interface (GUI) to monitor the status of an CyberPower uninterruptible power supply (UPS) using the PowerPanel Linux software. The GUI is built with Python's tkinter library, offering a user-friendly way to retrieve and display UPS statistics, which are otherwise accessible only via terminal commands.
 
+# Example
+![Screenshot of what version 0.2a looks like. Very basic GUI frame with text outputting status command.](https://ibb.co/Cz2ZD7j)
+
 ## Note
 This project was to get back into the swings of python and linux. Its a very basic python script and currently redudant as the information is pulled from the terminal. If you like Gui, well here you go. End goal is to introduce similar functionality to the windows version with GUI configurable settings, etc.
 
@@ -43,14 +46,19 @@ nohup python3 PwrPanel.py &
 * 0.2
     * New UI scaling ui
     * Automatically refreshes status every 5 seconds
+    * 0.2a
+        * Updated Icon image off stock tkinter
+
 
 ## Issue Tracking
 * Nothing I am aware of, besides general UI improvements & features.
 
 ## Ideal Features
 * Cleaned up presentation
+    * [matplotlib](https://matplotlib.org) Visualization library
+    * Minimize/Hide GUI
 * Configurable settings
 * Exporting/Importing settings
 * Exporting Data
 * Implement Widget with Plasma
-* [matplotlib](https://matplotlib.org) Visualization library
+
