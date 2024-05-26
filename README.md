@@ -15,11 +15,11 @@ This project was to get back into the swings of python and linux. Its a very bas
 * Setting up [Sudoer](https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/)
 ```
 sudo visudo
-
-#Add the following lines;
+```
+Add the following lines
+```
 #PwrPanel Project (Note comment this whatever you want.)
 YOUR_USERNAME ALL=(ALL) NOPASSWD: /usr/sbin/pwrstat
-
 ```
 
 ### Executing program
@@ -27,7 +27,6 @@ YOUR_USERNAME ALL=(ALL) NOPASSWD: /usr/sbin/pwrstat
 * Navigate to the install location in the terminal.
 ```
 Python3 PwrPanel.py
-
 ```
 
 ## Version History
