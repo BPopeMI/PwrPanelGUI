@@ -1,4 +1,4 @@
-# CyberPower PowerPanel Linux - (Gui) PwrPanelWidget
+# CyberPower PowerPanel Linux - (Gui)
 This project provides a graphical user interface (GUI) to monitor the status of an uninterruptible power supply (UPS) using the PowerPanel Linux software. The GUI is built with Python's tkinter library, offering a user-friendly way to retrieve and display UPS statistics, which are otherwise accessible only via terminal commands.
 
 ## Note
@@ -7,10 +7,11 @@ This project was to get back into the swings of python and linux. Its a very bas
 ### Prerequisites
 * [Python3](https://docs.python-guide.org/starting/install3/linux/)
 * [tkinter](https://docs.python.org/3/library/tkinter.html)
+* [setproctitle](https://pypi.org/project/setproctitle/)
 * [PowerPanel Linux](https://www.cyberpowersystems.com/product/software/power-panel-personal/powerpanel-for-linux/)
 
 ### Installing
-
+* Install Prerequisites
 * Clone the repository with [git](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=cli) or download the [zip](Insert Release link)
 * Setting up [Sudoer](https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/)
 ```
@@ -28,7 +29,18 @@ YOUR_USERNAME ALL=(ALL) NOPASSWD: /usr/sbin/pwrstat
 ```
 Python3 PwrPanel.py
 ```
+Or to detach from the temrinal
+```
+nohup python3 PwrPanel.py &
+```
 
 ## Version History
 * 0.1
     * Intital Basic Release
+
+
+
+## Issue Tracking
+* Scroll sending back to top
+* Small UI Box
+* Not viewable in System monitor for applications
