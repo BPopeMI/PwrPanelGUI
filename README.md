@@ -1,5 +1,5 @@
 # CyberPower PowerPanel Linux - (Gui)
-This project provides a graphical user interface (GUI) to monitor the status of an CyberPower uninterruptible power supply (UPS) using the PowerPanel Linux software. The GUI is built with Python's tkinter library, offering a user-friendly way to retrieve and display UPS statistics, which are otherwise accessible only via terminal commands.
+This project provides a graphical user interface (GUI) to monitor the status of a CyberPower uninterruptible power supply (UPS) using the PowerPanel Linux software. The GUI is built with Python's tkinter library, offering a user-friendly way to retrieve and display UPS statistics, which are otherwise accessible only via terminal commands.
 
 # Example
 ![Screenshot of what version 0.2a looks like. Very basic GUI frame with text outputting status command.](https://i.ibb.co/mHh9tht/Version-0-2a.png)
@@ -11,13 +11,12 @@ This project was to get back into the swings of python and linux. Its a very bas
 
 ### Prerequisites
 * [Python3](https://docs.python-guide.org/starting/install3/linux/) Language
-* [tkinter](https://docs.python.org/3/library/tkinter.html) Gui library
 * [setproctitle](https://pypi.org/project/setproctitle/) Process naming
 * [PowerPanel Linux](https://www.cyberpowersystems.com/product/software/power-panel-personal/powerpanel-for-linux/) UPS
 
 
 ### Installing
-* Install Prerequisites (Must - Unless you want to strip features)
+* Install Prerequisites (Use Pip on requirements.txt))
 * Clone the repository with [git](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=cli) or download the [zip](Insert Release link)
 * Setting up [Sudoer](https://www.cyberciti.biz/faq/linux-unix-running-sudo-command-without-a-password/)
 ```
